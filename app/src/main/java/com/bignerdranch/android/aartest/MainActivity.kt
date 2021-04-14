@@ -2,6 +2,7 @@ package com.bignerdranch.android.aartest
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.Gravity
 import android.view.View
 import android.widget.TextView
@@ -21,6 +22,10 @@ class MainActivity : AppCompatActivity() {
             getTestValue()
 
         }
+    }
+
+    private fun testPrint(){
+        Log.d("AAR", "testprintcalled")
     }
 
     private fun getTestValue(){
